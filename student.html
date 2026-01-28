@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <h2>👨‍🎓 Student Dashboard</h2>
+
+  <button onclick="startScan()">📷 Scan QR</button>
+
+  <div id="scanner"></div>
+
+  <p id="status"></p>
+
+  <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/student.js"></script>
+<script src="js/transitions.js"></script>
+
+<!-- QR Scanner Library -->
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+</body>
+</html>

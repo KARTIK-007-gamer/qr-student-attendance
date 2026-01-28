@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Report</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <h2>📊 Attendance Report</h2>
+
+  <select id="lectureSelect" onchange="loadAttendance()">
+    <option value="">Select Lecture</option>
+  </select>
+
+  <table id="attendanceTable">
+    <thead>
+      <tr>
+        <th>Student UID</th>
+        <th>Status</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <button class="logout" onclick="goBack()">⬅ Back</button>
+</div>
+
+<script type="module" src="js/firebase.js"></script>
+<script type="module" src="js/attendance.js"></script>
+<script src="js/transitions.js"></script>
+
+</body>
+</html>
